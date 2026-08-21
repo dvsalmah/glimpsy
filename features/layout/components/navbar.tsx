@@ -34,14 +34,14 @@ function NavbarContent({ isScrolled, isMobile = false }: { isScrolled: boolean; 
         const textColor = isMobile
           ? isActive
             ? "text-accent font-bold border-accent"
-            : "text-foreground hover:text-text border-transparent"
+            : "text-foreground hover:text-accent hover:border-accent border-transparent"
           : isScrolled
             ? isActive
               ? "text-accent font-bold border-accent"
-              : "text-foreground hover:text-text border-transparent"
+              : "text-foreground hover:text-accent hover:border-accent border-transparent"
             : isActive
               ? "text-white font-bold border-white"
-              : "text-white/90 hover:text-white border-transparent";
+              : "text-white/90 hover:text-white hover:border-white border-transparent";
 
         return (
           <Link
