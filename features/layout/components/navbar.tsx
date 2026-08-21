@@ -117,7 +117,7 @@ useEffect(() => {
         </nav>
         
         <div className="flex items-center gap-1">
-          <ThemeToggle />
+          <ThemeToggle isScrolled={showOriginalColor} />
         <button
           onClick={() => setMenuOpen(!menuOpen)}
           className="md:hidden p-2 rounded hover:bg-slate-500/10 transition-colors"

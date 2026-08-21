@@ -197,10 +197,12 @@ export const ThemeToggleButton2 = ({
   className = "",
   isDark: externalIsDark,
   onToggle,
+  isScrolled = true,
 }: {
   className?: string;
   isDark?: boolean;
   onToggle?: () => void;
+  isScrolled?: boolean;
 }) => {
   const [internalIsDark, setIsDark] = useState(false);
   const isDark = externalIsDark !== undefined ? externalIsDark : internalIsDark;
@@ -210,12 +212,18 @@ export const ThemeToggleButton2 = ({
     else setIsDark(!internalIsDark);
   };
 
+  const iconColor = !isScrolled
+    ? "text-white"
+    : isDark
+      ? "text-white"
+      : "text-foreground";
+
   return (
     <button
       type="button"
       className={cn(
-        "transition-all duration-50 active:scale-95 p-2 background-none",
-        isDark ? " text-white" : " text-slate-900",
+        "transition-all duration-300 active:scale-95 p-2 background-none",
+        iconColor,
         className,
       )}
       onClick={handleClick}
