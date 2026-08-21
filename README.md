@@ -1,18 +1,10 @@
 <p align="center">
-  <img src="public/logo.svg" alt="Glimpsy Logo" width="52" />
+  <img src="public/logo.svg" alt="Glimpsy Logo" width="150" align="middle" />
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="public/preview-1.png" alt="Glimpsy Preview" height="250" align="middle" />
 </p>
 
 <h1 align="center">Glimpsy</h1>
-
-<p align="center">
-  A modern news aggregator portal built with Next.js 16 & Tailwind CSS v4.
-</p>
-
-<p align="center">
-  <img src="public/preview-1.png" alt="Glimpsy Preview" width="100%" />
-</p>
-
----
 
 ## About
 
@@ -78,10 +70,5 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Environment
-
-No environment variables are required. The app fetches news from a public REST API endpoint directly.
-
 ---
-
-<p align="center">Built with ❤️ · SEAL Technical Test</p>
+<p>&copy; 2026 dvsalmah.</p>
